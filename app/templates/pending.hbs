@@ -1,0 +1,31 @@
+<div class="heading" id="pending">
+    <span class="icon">
+        <i class="fa fa-bars"></i>
+    </span>
+    <span class="text">{{heading}}</span>
+</div>
+<div class="main">
+    <div class="container">
+        <div class="line-Title">
+            <div class="row">
+                <div id="margin-Title" class="col-xs-5">Name</div>
+                <div class="col-xs-2">Active since</div>
+                <div class="col-xs-2">Last Modified</div>
+                <div class="col-xs-2">Token requestor ID</div>
+                <div class="col-xs-1"></div>
+            </div>
+        </div>
+        {{#each model as |profile|}}
+            <div class="lines">
+
+                <div class="row">
+                    <div id="margin-Table" class="col-xs-5">{{profile.name}}</div>
+                    <div class="col-xs-2">{{profile.active}}</div>
+                    <div class="col-xs-2">{{profile.modified}}</div>
+                    <div class="col-xs-2">{{profile.requestorID}}</div>
+                    <div class="col-xs-1"><i class="fa fa-ellipsis-v"></i></div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

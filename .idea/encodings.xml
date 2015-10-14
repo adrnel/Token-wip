@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/router.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/routes/active.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/routes/drafts.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/routes/pending.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/routes/suspended.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/app.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/active.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/application.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/pending.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
+  </component>
+</project>

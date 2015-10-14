@@ -1,0 +1,75 @@
+html{
+
+
+}
+
+body{
+  background-color: #EEEEEE;
+  margin: 0px;
+  padding: 0px;
+}
+
+.heading{
+  color: white;
+  padding: 0px 0px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0px;
+  font-size: 21px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.8);
+}
+#active{
+  background-color: #1D9C5A;
+
+}
+
+#pending{
+  background-color: #FCA725;
+}
+
+#suspended{
+  background-color: orangered;
+}
+
+#drafts{
+  background-color: #757575;
+}
+
+.main{
+  padding: 20px 150px;
+}
+
+.icon{
+  padding: 19px 26px;
+
+  margin: 0px;
+
+}
+
+.line-Title{
+  color: #8B8B8B;
+  height: 60px;
+  line-height: 60px;
+}
+
+.lines{
+  background-color: #FFFFFF;
+  color: #444444;
+  height: 60px;
+  line-height: 60px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #E0E0E0;
+}
+
+.text{
+
+}
+
+#margin-Title{
+
+}
+
+#margin-Table{
+
+}

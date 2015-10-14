@@ -1,0 +1,109 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "name": "St James Bank",
+      "tokenRequestor": "01200000001",
+      "tspCode": "012",
+      "channelDomain": "ECOMMERCE",
+      "merchantDomain": [
+        {
+          "value": "AMAZON"
+        }
+      ],
+      "walletDomain": [],
+      "multipleUse": true,
+      "tokenInitialState": "ACTIVE",
+      "tokenExpiry": null,
+      "minTokenAssurance": 1,
+      "defaultTokenAssurance": 50,
+      "preservedPretokenEndChars": 4,
+      "pretokenType": "PAN",
+      "tokenLength": 16,
+      "tokenPrefix": "412186",
+      "pretokenPrefixes": [
+        "600000"
+      ],
+      "idvRequired": false,
+      "clearingTimeLimit": 12,
+      "tokenProfileStatus": "ENABLED",
+      "usePretokenExpiry": true,
+      "createdTimestamp": 1443444120000,
+      "modifiedTimestamp": 1443444160000
+    },
+    {
+      "id": 2,
+      "name": "Canary Banking Plc",
+      "tokenRequestor": "01200000002",
+      "tspCode": "012",
+      "channelDomain": "MCOMMERCE",
+      "merchantDomain": [],
+      "walletDomain": [
+        {
+          "value": "Proxama Wallet"
+        }
+      ],
+      "multipleUse": false,
+      "tokenInitialState": "ACTIVE",
+      "tokenExpiry": null,
+      "minTokenAssurance": 1,
+      "defaultTokenAssurance": 50,
+      "preservedPretokenEndChars": 3,
+      "pretokenType": "PAN",
+      "tokenLength": 19,
+      "tokenPrefix": "611111",
+      "pretokenPrefixes": [
+        "600000"
+      ],
+      "idvRequired": false,
+      "clearingTimeLimit": 12,
+      "tokenProfileStatus": "ENABLED",
+      "usePretokenExpiry": true,
+      "createdTimestamp": 1443444551000,
+      "modifiedTimestamp": 1443444609000
+    },
+    {
+      "id": 3,
+      "name": "Adrian",
+      "tokenRequestor": null,
+      "tspCode": "012",
+      "channelDomain": "NON_CARD",
+      "merchantDomain": [
+        {
+          "value": "dgfdgfd"
+        }
+      ],
+      "walletDomain": [
+        {
+          "value": "sdfdsf"
+        }
+      ],
+      "multipleUse": true,
+      "tokenInitialState": "PENDING",
+      "tokenExpiry": null,
+      "minTokenAssurance": 1,
+      "defaultTokenAssurance": 90,
+      "preservedPretokenEndChars": 4,
+      "pretokenType": "PAN",
+      "tokenLength": 16,
+      "tokenPrefix": "412186",
+      "pretokenPrefixes": [
+        "600000"
+      ],
+      "idvRequired": false,
+      "clearingTimeLimit": 12,
+      "tokenProfileStatus": "PENDING",
+      "usePretokenExpiry": true,
+      "createdTimestamp": 1443445833000,
+      "modifiedTimestamp": 1443445866000
+    }
+  ],
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 3,
+  "sort": null,
+  "first": true,
+  "numberOfElements": 3,
+  "size": 20,
+  "number": 0
+}
