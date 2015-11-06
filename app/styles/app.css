@@ -4,6 +4,7 @@ html{
 }
 
 body{
+  position: relative;
   background-color: #EEEEEE;
   margin: 0px;
   padding: 0px;
@@ -16,8 +17,38 @@ body{
   line-height: 60px;
   margin: 0px;
   font-size: 21px;
-  box-shadow: 0 0 5px 0 rgba(0,0,0,0.8);
+  box-shadow: 0 0 7px 5px #ADADAD;
 }
+
+.menu{
+  position: absolute;
+  top: 0;
+  background: #dddddd;
+  width: 300px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+  border:1px solid #ccc;
+  transition:.3s;
+  z-index: 100;
+  background-color: #FFFFFF;
+  left: -300px;
+}
+
+.menu.active{
+  position: absolute;
+  
+  background-color: #FFFFFF;
+  transform: translateX(300px);
+}
+.menu a, .menu.active a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu a:hover, .menu.active a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
 #active{
   background-color: #1D9C5A;
 
@@ -36,6 +67,7 @@ body{
 }
 
 .main{
+  position: relative;
   padding: 20px 150px;
 }
 
@@ -67,9 +99,14 @@ body{
 }
 
 #margin-Title{
-
+  padding: 0px 0px 0px 40px;
 }
 
-#margin-Table{
+#margin-Name{
+  font-weight: bold;
+  padding: 0px 0px 0px 40px;
+}
 
+#margin-Ellipsis{
+  padding: 0px 0px 0px 40px;
 }

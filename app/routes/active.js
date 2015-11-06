@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  actions: {
+    actions: {
     headerClicked: function () {
-      alert('Header CLicked');
+      alert('Header Clicked');
     }
   },
   model(){

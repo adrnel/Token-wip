@@ -1,8 +1,19 @@
+
+
 <div class="heading" id="active">
+    
     <span class="icon">
-        <i {{action 'headerClicked'}} class="fa fa-bars"></i>
+        <i {{action 'show'}} class="fa fa-bars"></i>
     </span>
-    <span class="text">{{heading}}</span>
+    <span class="text">{{heading}}</span> 
+</div>
+<div class="menu {{if active 'active'}}">
+    <div {{action "show"}}><i class="fa fa-bars"></i>{{heading}}</div>
+    <div {{action "show"}}><i class="fa fa-check-circle-o"></i>Active</div>
+    {{#link-to "pending"}}<div><i class="fa fa-clock-o"></i>Pending</div>{{/link-to}}
+    {{#link-to "drafts"}}<div><i class="fa fa-pencil-square-o"></i>Drafts</div>{{/link-to}}
+    {{#link-to "suspended"}}<div><i class="fa fa-ban"></i>Suspended</div>{{/link-to}}
+
 </div>
 <div class="main">
     <div class="container">
@@ -19,11 +30,11 @@
             <div class="lines">
 
                 <div class="row">
-                    <div id="margin-Table" class="col-xs-5">{{profile.name}}</div>
+                    <div id="margin-Name" class="col-xs-5">{{profile.name}}</div>
                     <div class="col-xs-2">{{profile.active}}</div>
                     <div class="col-xs-2">{{profile.modified}}</div>
                     <div class="col-xs-2">{{profile.requestorID}}</div>
-                    <div class="col-xs-1"><i class="fa fa-ellipsis-v"></i></div>
+                    <div id="margin-Ellipsis" class="col-xs-1"><i class="fa fa-ellipsis-v"></i></div>
                 </div>
             </div>
         {{/each}}
