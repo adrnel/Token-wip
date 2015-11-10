@@ -8,80 +8,104 @@ body{
   background-color: #EEEEEE;
   margin: 0px;
   padding: 0px;
+  height: 1000px; 
+  
 }
 
 .heading{
   color: white;
   padding: 0px 0px;
-  height: 60px;
+  height: 79px;
   line-height: 60px;
   margin: 0px;
   font-size: 21px;
   box-shadow: 0 0 7px 5px #ADADAD;
+  font-size: 1.3em;
+}
+
+#header{
+  font-size: 27px;
 }
 
 .menu{
   position: absolute;
   top: 0;
   background: #dddddd;
-  width: 300px;
+  width: 350px;
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
   border:1px solid #ccc;
   transition:.3s;
   z-index: 100;
   background-color: #FFFFFF;
-  left: -300px;
+  left: -350px;
+  font-size: 23px;
+  color: #7B7B7B;
 }
 
 .menu.active{
   position: absolute;
   
   background-color: #FFFFFF;
-  transform: translateX(300px);
+  transform: translateX(350px);
 }
 .menu a, .menu.active a{
-    color: #000000;
+    color: #757575;
     text-decoration: none;
 }
 
 .menu a:hover, .menu.active a:hover{
-    color: #000000;
+    color: #757575;
     text-decoration: none;
 }
 
 #active{
   background-color: #1D9C5A;
-
+  font-size: 27px;
 }
 
 #pending{
   background-color: #FCA725;
-}
-
-#suspended{
-  background-color: orangered;
+  font-size: 27px;
 }
 
 #drafts{
   background-color: #757575;
+  font-size: 27px;
+}
+
+#suspended{
+  background-color: orangered;
+  font-size: 27px;
 }
 
 .main{
   position: relative;
-  padding: 20px 150px;
+  padding: 0px 150px;
+  height: 940px; 
 }
 
 .icon{
-  padding: 19px 26px;
-
   margin: 0px;
-
 }
 
 .line-Title{
   color: #8B8B8B;
   height: 60px;
   line-height: 60px;
+}
+
+i[class^="fa fa"]{
+  padding: 24px 30px;
+  font-size: 27px;
+}
+
+i[class="fa fa-ellipsis-v"]{
+  padding: 0px;
+  font-size: 16px;
+}
+
+i[class="fa fa-square"]{
+  color: #FFFFFF;
 }
 
 .lines{
@@ -108,5 +132,103 @@ body{
 }
 
 #margin-Ellipsis{
-  padding: 0px 0px 0px 40px;
+  padding: 0px 0px 0px 50px;
+}
+
+#menu-header{
+  font-size: 27px;
+  border-style: solid;
+  border-width: 2px 0px;
+  border-color: #EEEEEE;
+  color: #212121;
+    
+}
+
+#menu-active{
+  color: #757575;
+}
+
+#menu-active i[class="fa fa-check-circle-o"]{
+  color: #2D9958;
+}
+  
+
+#menu-active-active{
+  background: #F3F3F3;
+  color: #2D9958;
+  box-sizing: content-box;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 10px;
+}
+
+#menu-pending{
+  color: #757575;
+}
+
+#menu-pending i[class="fa fa-clock-o"]{
+  color: #FCA725;
+}
+  
+
+#menu-pending-active{
+  background: #F3F3F3;
+  color: #FCA725;
+  box-sizing: content-box;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 10px;
+}
+
+#menu-drafts{
+  color: #757575;
+}
+
+#menu-drafts i[class="fa fa-pencil-square-o"]{
+  color: #757575;
+}
+  
+
+#menu-drafts-active{
+  background: #F3F3F3;
+  color: #757575;
+  box-sizing: content-box;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 10px;
+}
+
+#menu-suspended{
+  color: #757575;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  border-color: #EEEEEE;
+}
+
+#menu-suspended i[class="fa fa-ban"]{
+  color: orangered;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  border-color: #EEEEEE;
+}
+  
+
+#menu-suspended-active{
+  background: #F3F3F3;
+  color: orangered;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  border-color: #EEEEEE;
+}
+
+#menu-requestor{
+  padding: 24px 0px 0px 30px;
+  font-size: 20px;
+
+}
+
+#requestor-name{
+  font-weight: bold;
+  color: #212121;
+
 }

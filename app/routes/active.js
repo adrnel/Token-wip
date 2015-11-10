@@ -1,11 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    actions: {
-    headerClicked: function () {
-      alert('Header Clicked');
-    }
-  },
   model(){
     let profile=[
       {

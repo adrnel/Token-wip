@@ -5,7 +5,11 @@ export default Ember.Controller.extend({
         show() {
             //alert('Header Clicked 2');
              this.toggleProperty('active');
+        },
+          off() {
+             this.set('active', false);
         }
+  
     },
     heading: 'Active'
 });
