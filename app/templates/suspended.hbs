@@ -1,10 +1,23 @@
-<div class="heading" id="suspended">
+<div class="heading" id="{{headingName}}">
+    
     <span class="icon">
-        <i class="fa fa-bars"></i>
+        <i {{action 'show'}} class="fa fa-bars"></i>
     </span>
-    <span class="text">{{heading}}</span>
+    <span class="text">{{headingName}}</span> 
 </div>
-<div class="main">
+<div class="menu {{if active 'active'}}">
+    <div {{action "show"}} id="menu-header"><i class="fa fa-bars"></i>{{headingName}}</div>
+    {{#link-to "active"}}<div {{action "show"}} id="menu-active"><div><i class="fa fa-check-circle-o"></i>Active</div></div>{{/link-to}}
+    {{#link-to "pending"}}<div {{action "show"}} id="menu-pending"><i class="fa fa-clock-o"></i>Pending</div>{{/link-to}}
+    {{#link-to "drafts"}}<div {{action "show"}} id="menu-drafts"><div><i class="fa fa-pencil-square-o"></i>Drafts</div></div>{{/link-to}}
+    <div {{action "show"}} id="menu-suspended-active"><div><i class="fa fa-ban"></i>Suspended</div></div>
+    <div id="menu-requestor"><span id="requestor-name">John Smith</span><br/>Requestor | Nordea</div>
+    <div id="menu-settings"><div><i class="fa fa-cog"></i>Settings</div></div>
+    <div id="menu-help"><div><i class="fa fa-question-circle"></i>Help &amp; Feedback</div></div>
+    <div id="menu-sign-out"><div><i class="fa fa-square"></i>Sign out</div></div>
+
+</div>
+<div {{action "off"}} class="main">
     <div class="container">
         <div class="line-Title">
             <div class="row">
@@ -19,13 +32,15 @@
             <div class="lines">
 
                 <div class="row">
-                    <div id="margin-Table" class="col-xs-5">{{profile.name}}</div>
+                    <div id="margin-Name" class="col-xs-5">{{profile.name}}</div>
                     <div class="col-xs-2">{{profile.active}}</div>
                     <div class="col-xs-2">{{profile.modified}}</div>
                     <div class="col-xs-2">{{profile.requestorID}}</div>
-                    <div class="col-xs-1"><i class="fa fa-ellipsis-v"></i></div>
+                    <div id="margin-Ellipsis" class="col-xs-1"><i class="fa fa-ellipsis-v"></i></div>
                 </div>
             </div>
         {{/each}}
     </div>
+    <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">+</i></a>
 </div>
+

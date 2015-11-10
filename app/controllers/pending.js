@@ -1,5 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-    heading: 'Pending'
+      actions: {
+        show() {
+             this.toggleProperty('active');
+        },
+          off() {
+             this.set('active', false);
+        }
+  
+    },
+    headingName: 'Pending'
 });

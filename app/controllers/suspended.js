@@ -1,5 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-    heading: 'Suspended'
+      actions: {
+        show() {
+             this.toggleProperty('active');
+        },
+          off() {
+             this.set('active', false);
+        }
+  
+    },
+    headingName: 'Suspended'
 });

@@ -58,30 +58,29 @@ body{
     text-decoration: none;
 }
 
-#active{
+#Active{
   background-color: #1D9C5A;
   font-size: 27px;
 }
 
-#pending{
+#Pending{
   background-color: #FCA725;
   font-size: 27px;
 }
 
-#drafts{
+#Drafts{
   background-color: #757575;
   font-size: 27px;
 }
 
-#suspended{
+#Suspended{
   background-color: orangered;
   font-size: 27px;
 }
 
 .main{
   position: relative;
-  padding: 0px 150px;
-  height: 940px; 
+  height: 890px; 
 }
 
 .icon{
@@ -94,7 +93,12 @@ body{
   line-height: 60px;
 }
 
-i[class^="fa fa"]{
+.heading i[class^="fa fa"]{
+  padding: 24px 30px;
+  font-size: 27px;
+}
+
+.menu i[class^="fa fa"]{
   padding: 24px 30px;
   font-size: 27px;
 }
@@ -200,28 +204,27 @@ i[class="fa fa-square"]{
 
 #menu-suspended{
   color: #757575;
-  border-style: solid;
-  border-width: 0px 0px 2px 0px;
-  border-color: #EEEEEE;
 }
 
 #menu-suspended i[class="fa fa-ban"]{
   color: orangered;
-  border-style: solid;
-  border-width: 0px 0px 2px 0px;
-  border-color: #EEEEEE;
 }
   
 
 #menu-suspended-active{
   background: #F3F3F3;
   color: orangered;
+  box-sizing: content-box;
   border-style: solid;
-  border-width: 0px 0px 2px 0px;
-  border-color: #EEEEEE;
+  border-color: #FFFFFF;
+  border-width: 10px;
+
 }
 
 #menu-requestor{
+  border-style: solid;
+  border-width: 2px 0px 0px 0px;
+  border-color: #EEEEEE;
   padding: 24px 0px 0px 30px;
   font-size: 20px;
 
@@ -231,4 +234,25 @@ i[class="fa fa-square"]{
   font-weight: bold;
   color: #212121;
 
+}
+
+a[class="btn-floating btn-large waves-effect waves-light blue"]{
+  position: absolute;
+  right: 50px;
+  bottom: 50px;   
+}
+
+.declined{
+  color: #F87B75;
+  background-color: #FFCDD2;
+  padding: 0px 0px 0px 35px;
+  font-weight: bold;
+    
+}
+
+#tick{
+  background: #EEEEEE;
+  color: #1D9C5A;
+  font-size: 24px;
+  padding: 0px 0px 0px 30px;
 }

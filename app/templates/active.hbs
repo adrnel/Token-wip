@@ -1,18 +1,16 @@
-
-
-<div class="heading" id="active">
+<div class="heading" id="{{headingName}}">
     
     <span class="icon">
         <i {{action 'show'}} class="fa fa-bars"></i>
     </span>
-    <span class="text">{{heading}}</span> 
+    <span class="text">{{headingName}}</span> 
 </div>
 <div class="menu {{if active 'active'}}">
-    <div {{action "show"}} id="menu-header"><i class="fa fa-bars"></i>{{heading}}</div>
+    <div {{action "show"}} id="menu-header"><i class="fa fa-bars"></i>{{headingName}}</div>
     <div {{action "show"}} id="menu-active-active"><i class="fa fa-check-circle-o"></i>Active</div>
-    <div id="menu-pending">{{#link-to "pending"}}<div><i class="fa fa-clock-o"></i>Pending</div>{{/link-to}}</div>
-    <div id="menu-drafts">{{#link-to "drafts"}}<div><i class="fa fa-pencil-square-o"></i>Drafts</div>{{/link-to}}</div>
-    <div id="menu-suspended">{{#link-to "suspended"}}<div><i class="fa fa-ban"></i>Suspended</div>{{/link-to}}</div>
+    {{#link-to "pending"}}<div {{action "show"}} id="menu-pending"><div><i class="fa fa-clock-o"></i>Pending</div></div>{{/link-to}}
+    {{#link-to "drafts"}}<div {{action "show"}} id="menu-drafts"><div><i class="fa fa-pencil-square-o"></i>Drafts</div></div>{{/link-to}}
+    {{#link-to "suspended"}}<div {{action "show"}} id="menu-suspended"><div><i class="fa fa-ban"></i>Suspended</div></div>{{/link-to}}
     <div id="menu-requestor"><span id="requestor-name">John Smith</span><br/>Requestor | Nordea</div>
     <div id="menu-settings"><div><i class="fa fa-cog"></i>Settings</div></div>
     <div id="menu-help"><div><i class="fa fa-question-circle"></i>Help &amp; Feedback</div></div>
@@ -43,4 +41,5 @@
             </div>
         {{/each}}
     </div>
+    <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">+</i></a>
 </div>
